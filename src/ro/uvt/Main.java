@@ -1,16 +1,21 @@
 package ro.uvt;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
-	Cuprins cuprins = new Cuprins();
-	List<Autor> autori = Arrays.asList(new Autor("Jonel Barbu"));
-	Carte c = new Carte("Titlu", new Cuprins(), autori);
+       // System.out.println("Hi!");
 
-	c.createCapitol("Introducere", Arrays.asList(new Paragraf(), new Imagine(), new Tabel()));
+        Cuprins cuprins = new Cuprins();
+        List<Autor> autori = Arrays.asList(new Autor("Ion Barbu"));
 
-	c.render();
+        Carte c = new Carte(autori, cuprins, "CarteX");
+
+        c.createCapitol("Introducere", Arrays.asList(new Paragraf(), new Imagine(), new Tabel(), new Tabel()));
+
+        c.render();
+
     }
 }

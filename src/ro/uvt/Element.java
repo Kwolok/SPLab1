@@ -1,6 +1,9 @@
 package ro.uvt;
 
-public interface Element {
-    void rander();
+import java.util.Collection;
 
+public interface Element {
+    //atribute
+    //metode
+    void render();
 }

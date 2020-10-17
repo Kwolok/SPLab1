@@ -1,23 +1,15 @@
 package ro.uvt;
 
 public class Autor {
-    private String name;
-
-    public Autor(String s) {
-    }
-
-    public String getName(){
-        return name;
+    private String nume;
+    public Autor(String nume) {
+        this.nume=nume;
     }
 
     @Override
     public String toString() {
         return "Autor{" +
-                "name='" + name + '\'' +
+                "nume='" + nume + '\'' +
                 '}';
-    }
-
-    public void setAutor(String name) {
-        this.name = name;
     }
 }

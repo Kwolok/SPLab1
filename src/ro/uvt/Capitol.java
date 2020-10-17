@@ -3,19 +3,30 @@ package ro.uvt;
 import java.util.Collection;
 
 public class Capitol {
-    private String name;
-    private Collection<Element> elemente;
+    //atribute
+    private String nume;
+    private Collection<Element> elemente;//agregare
 
-    public Capitol(String nume) {
-    }
-
+    //constructori
     public Capitol(String nume, Collection<Element> elemente) {
-        this.name = name;
-        this.elemente = elemente;
+        this.nume=nume;
+        this.elemente=elemente;
     }
 
-    public void rander(){
-        elemente.forEach(Capitol::rander);
+    public Capitol() {
     }
 
+    //metode
+    public  void render(){
+        elemente.forEach(Element::render);
+
+    }
+
+    @Override
+    public String toString() {
+        return "Capitol{" +
+                "nume='" + nume + '\'' +
+                ", elemente=" + elemente +
+                '}';
+    }
 }

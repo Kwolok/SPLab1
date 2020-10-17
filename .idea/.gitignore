@@ -2,9 +2,7 @@
 /shelf/
 /workspace.xml
 # Datasource local storage ignored files
-/../../../../:\IntelliJ\SPLab1\.idea/dataSources/
+/../../../../../../:\Users\barbv\IdeaProjects\SP1\.idea/dataSources/
 /dataSources.local.xml
-# Zeppelin ignored files
-/ZeppelinRemoteNotebooks/
 # Editor-based HTTP Client requests
 /httpRequests/
